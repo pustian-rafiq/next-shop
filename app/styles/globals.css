@@ -25,7 +25,9 @@ li {
 p {
   margin: 0;
 }
-
+a {
+  text-decoration: none;
+}
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }
@@ -151,4 +153,9 @@ p {
   background-color: rgb(22, 232, 85);
   padding: 7px 15px;
   border-radius: 5px;
+  cursor: pointer;
+}
+.link-btn {
+  text-decoration: none;
+  cursor: pointer;
 }

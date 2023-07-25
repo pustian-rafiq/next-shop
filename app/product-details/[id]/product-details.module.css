@@ -11,16 +11,28 @@
 
 .productDetailsWrapper .productContent .title {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 .productDetailsWrapper .productContent .description {
-  font-size: 12px;
+  font-size: 15px;
   text-align: justify;
+  margin-bottom: 10px;
+}
+.productDetailsWrapper .productContent .category {
+  margin: 10px 0px;
 }
 .productDetailsWrapper .productContent .category span {
   font-size: 17px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 .productDetailsWrapper .productContent .price span {
   font-size: 17px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+.productDetailsWrapper .productContent .price {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }

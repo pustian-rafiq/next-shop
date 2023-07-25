@@ -11,7 +11,6 @@ import {
   removeFromCartList,
 } from "../redux/actions/cartActions";
 import styles from "./cart.module.css";
-
 const CartPage = () => {
   const { cart_list, loading } = useAppSelector((state: any) => state);
   console.log(cart_list);
@@ -44,7 +43,7 @@ const CartPage = () => {
 
   return (
     <div className={styles.cartWrapper}>
-      <h3>Your Cart</h3>
+      <h3>My Cart</h3>
       <table className={styles.cart}>
         <thead>
           <tr>
@@ -68,6 +67,7 @@ const CartPage = () => {
                   </td>
                   <td>
                     <button
+                      style={{ padding: "0px 5px" }}
                       onClick={() =>
                         incrementDecrementQuantity(product?.id, "increment")
                       }
@@ -79,6 +79,7 @@ const CartPage = () => {
                       value={product?.quantity}
                     />
                     <button
+                      style={{ padding: "0px 5px" }}
                       onClick={() =>
                         incrementDecrementQuantity(product?.id, "decrement")
                       }
@@ -90,8 +91,15 @@ const CartPage = () => {
                   <td>{product?.price * product.quantity}</td>
 
                   <td>
-                    {/* <FaBacon /> */}
-                    <button onClick={() => removeFromCart(product?.id)}>
+                    <button
+                      style={{
+                        background: "red",
+                        color: "white",
+                        padding: "5px 10px",
+                        borderRadius: "5px",
+                      }}
+                      onClick={() => removeFromCart(product?.id)}
+                    >
                       Delete
                     </button>
                   </td>
@@ -113,7 +121,7 @@ const CartPage = () => {
         <p>
           {" "}
           No products in your cart! Please add to cart{" "}
-          <Link href={"/"}>Here</Link>
+          <Link href={"/"}> Click here</Link>
         </p>
       )}
     </div>

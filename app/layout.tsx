@@ -1,10 +1,10 @@
 "use client";
-import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Provider } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar";
 import { store } from "./redux/store";
 import "./styles/styles.css";
@@ -30,6 +30,7 @@ export default function RootLayout({
             autoClose={3000}
           />
           {children}
+          <Footer />
         </Provider>
       </body>
     </html>

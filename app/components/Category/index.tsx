@@ -24,7 +24,7 @@ const Category: FC<ICategory> = ({ handleChange }) => {
 
   return (
     <div>
-      <h4 className="sidebar-title">Filter By Category</h4>
+      <h4 style={{ fontSize: "17px" }}>Filter By Category</h4>
       <div className={styles.categoryWrapper}>
         <label className="flex">
           <input onChange={handleChange} type="radio" value="" name="filter" />

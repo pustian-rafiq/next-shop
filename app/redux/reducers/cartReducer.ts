@@ -37,9 +37,6 @@ const cartReducer = (state = initialState, action: any) => {
         loading: false,
       };
     case FETCH_CART_PRODUCT_LIST:
-      //   state.cart_list.map((product) => {
-      //     state.subTotal = state.subTotal + product.price;
-      //   });
       return {
         ...state,
         loading: false,
@@ -48,7 +45,6 @@ const cartReducer = (state = initialState, action: any) => {
       const removedProduct = state.cart_list.find(
         (product) => product.id === payload
       );
-      console.log("removedProduct", state.subTotal);
       state.cart_list = state.cart_list.filter(
         (product) => product.id !== payload
       );

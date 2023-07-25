@@ -3,13 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #dcdcdc;
+  background-color: #153f52;
   color: white;
 }
 
 .logo {
   cursor: pointer;
-  color: #3761af;
+  color: white;
   font-size: 18px;
 }
 .cart {
@@ -18,17 +18,18 @@
 }
 .icon {
   font-size: 18px;
+  color: white;
 }
 .cartCount {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: red;
   color: white;
   border-radius: 50%;
-  top: -10px;
-  right: 0px;
+  top: -5px;
+  right: 5px;
 }

@@ -9,7 +9,9 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <h4>Next Shop</h4>
+        <Link className="link-btn" href={"/"}>
+          <h4>Next Shop</h4>
+        </Link>
       </div>
 
       <Link href={"/cart"} className={styles.cart}>

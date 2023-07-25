@@ -23,7 +23,7 @@ type Product = {
   image: string;
 };
 
-const ProductDetailsPage: FC<Props> = () => {
+const ProductDetailsPage: FC = () => {
   const params = useParams();
   const id: number = Number(params.id);
 

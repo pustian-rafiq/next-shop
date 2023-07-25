@@ -37,7 +37,7 @@ const ProductList: FC<IProductCategory> = ({ selectedCategory }) => {
   }, [selectedCategory]);
 
   if (loading) {
-    return <h4>Loading posts....</h4>;
+    return <h4>Loading products....</h4>;
   }
 
   return (

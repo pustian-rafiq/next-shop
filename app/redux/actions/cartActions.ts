@@ -7,6 +7,7 @@ import {
   INCREMENT_QUANTITY,
   REMOVE_FROM_CART,
 } from "../types";
+
 const addToCart = (products: IProduct) => ({
   type: ADD_TO_CART,
   payload: products,

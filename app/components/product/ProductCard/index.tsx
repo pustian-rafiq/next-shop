@@ -37,7 +37,7 @@ const ProductCard: FC<IProduct> = ({ product }) => {
       <Image
         src={product?.image}
         alt="img"
-        width={200}
+        width={170}
         height={230}
         className={styles.productImage}
       />
@@ -45,9 +45,9 @@ const ProductCard: FC<IProduct> = ({ product }) => {
       <div className={styles.cardContainer}>
         <Link
           href={`/product-details/${product.id}`}
-          className={styles.productTitle}
+          className={`link-btn ${styles.productTitle}`}
         >
-          {product.title}
+          {product.title?.slice(0, 50)}
         </Link>
         <div className={styles.price}>
           <h5>{product.price}</h5>
