@@ -1,7 +1,13 @@
+"use client";
+import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-
+import { Provider } from "react-redux";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Navbar from "./components/Navbar";
+import { store } from "./redux/store";
+import "./styles/styles.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +22,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="mainContainer">
+        <Provider store={store}>
+          <Navbar />
+          <ToastContainer
+            // toastStyle={{ backgroundColor: "#24a346", color: "white" }}
+            autoClose={3000}
+          />
+          {children}
+        </Provider>
+      </body>
     </html>
   );
 }

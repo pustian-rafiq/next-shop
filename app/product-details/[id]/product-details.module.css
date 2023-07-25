@@ -1,0 +1,26 @@
+.productDetailsWrapper {
+  width: 800px;
+  margin: 0 auto;
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.productDetailsWrapper .productContent .title {
+  font-size: 18px;
+}
+.productDetailsWrapper .productContent .description {
+  font-size: 12px;
+  text-align: justify;
+}
+.productDetailsWrapper .productContent .category span {
+  font-size: 17px;
+  font-weight: bold;
+}
+.productDetailsWrapper .productContent .price span {
+  font-size: 17px;
+  font-weight: bold;
+}
