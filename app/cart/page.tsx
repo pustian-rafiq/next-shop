@@ -13,12 +13,10 @@ import {
 import styles from "./cart.module.css";
 const CartPage = () => {
   const { cart_list, loading } = useAppSelector((state: any) => state);
-  console.log(cart_list);
   const dispatch = useAppDispatch();
 
   // Remove cart item
   const removeFromCart = (id: number) => {
-    console.log(id);
     if (id) {
       dispatch(removeFromCartList(id));
     }
@@ -26,7 +24,6 @@ const CartPage = () => {
 
   // Increment or decrement quantity
   const incrementDecrementQuantity = (id: number, type: string) => {
-    console.log(id);
     if (type === "increment") {
       dispatch(incrementQuantity(id));
     } else {

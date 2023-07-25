@@ -28,8 +28,9 @@ type Product = {
 
 const ProductCard: FC<IProduct> = ({ product }) => {
   const dispatch = useAppDispatch();
+
+  // Add to caty product
   const addToCart = (product: Product) => {
-    console.log(product);
     dispatch(productAddToCart(product));
   };
   return (

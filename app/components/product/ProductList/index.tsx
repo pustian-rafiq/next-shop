@@ -22,12 +22,9 @@ interface IProductCategory {
 }
 
 const ProductList: FC<IProductCategory> = ({ selectedCategory }) => {
-  // const [products ,setproducts]=useState([])
-  //Fetch all post
   const { products, loading } = useAppSelector((state: any) => state.products);
   const dispatch: any = useAppDispatch();
 
-  console.log("products", products);
   useEffect(() => {
     if (selectedCategory) {
       dispatch(getProductListByCategory(selectedCategory));

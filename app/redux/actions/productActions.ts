@@ -55,7 +55,6 @@ export const getProductDetails = (id: number) => {
     axios
       .get(`https://fakestoreapi.com/products/${id}`)
       .then((resp) => {
-        console.log("resp", resp.data);
         dispatch(getProduct(resp.data));
       })
       .catch((error) => {

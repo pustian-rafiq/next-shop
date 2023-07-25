@@ -35,7 +35,7 @@ export const productAddToCart = (product: IProduct) => {
     dispatch(addToCart(product));
   };
 };
-// Fetch products list
+// Fetch cart products list
 export const getCartProducts = () => {
   return function (dispatch: any) {
     dispatch(getCartProductList());

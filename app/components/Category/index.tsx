@@ -13,7 +13,6 @@ const Category: FC<ICategory> = ({ handleChange }) => {
   );
   const dispatch: any = useAppDispatch();
 
-  console.log("categories", categories);
   useEffect(() => {
     dispatch(getCategoryList());
   }, []);

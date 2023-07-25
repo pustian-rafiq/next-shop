@@ -7,7 +7,6 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("");
 
   const handleChange = (event: any) => {
-    console.log(event.target.value);
     setSelectedCategory(event.target.value);
   };
   return (

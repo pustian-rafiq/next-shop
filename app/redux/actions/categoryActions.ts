@@ -6,13 +6,12 @@ const getCategories = (categories: string[]) => ({
   payload: categories,
 });
 
-// Fetch products list
+// Fetch category list
 export const getCategoryList = () => {
   return function (dispatch: any) {
     axios
       .get("https://fakestoreapi.com/products/categories")
       .then((resp) => {
-        console.log("resp", resp.data);
         dispatch(getCategories(resp.data));
       })
       .catch((error) => {
